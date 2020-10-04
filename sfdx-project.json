@@ -1,0 +1,9 @@
+{
+  "packageDirectories": [{
+    "path": "force-app",
+    "default": true
+  }],
+  "namespace": "",
+  "sfdcLoginUrl": "https://my-lwc-trail-dev-ed.my.salesforce.com/",
+  "sourceApiVersion": "49.0"
+}

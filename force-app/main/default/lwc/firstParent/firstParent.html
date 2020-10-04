@@ -1,0 +1,20 @@
+<template>
+    <lightning-card title="First">
+        <lightning-button variant="brand" label="Brand" title="Primary action" slot="actions">Submit
+        </lightning-button>
+        <p class="slds-var-p-horizontal_small">{message}</p>
+        <div class="slds-var-p-horizontal_small">
+            <lightning-input type="string" label="Test Input" value={message} onchange={handleInputChange}>
+            </lightning-input>
+        </div>
+        <p slot="footer">Message from child {childMessage}</p>
+    </lightning-card>
+
+    <div class="slds-var-p-top_xx-small">
+        <lightning-card title="Child">
+            <c-first-child message-from-parent={message}>
+            </c-first-child>
+
+        </lightning-card>
+    </div>
+</template>

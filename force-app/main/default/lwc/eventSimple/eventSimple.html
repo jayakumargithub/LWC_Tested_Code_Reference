@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="EventSimple" icon-name="custom:custom9">
+        <div class="slds-var-m-around_medium">
+            <p class="slds-var-m-vertical_medium content">Page {page}</p>
+            <c-paginator onprevious={previousHandler} onnext={nextHandler} onfruitchange={onfruitHandler}>
+            </c-paginator>
+            <p>Selected Fruit : {selectedFruit}</p>
+        </div>
+    </lightning-card>
+</template>

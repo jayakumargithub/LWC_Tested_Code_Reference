@@ -1,0 +1,17 @@
+<template>
+    <lightning-layout>
+        <lightning-layout-item title="With event dispatch">
+            <lightning-button label="Previous" icon-name="utility:chevronleft" onclick={previousHandler}>
+            </lightning-button>
+        </lightning-layout-item>
+        <lightning-layout-item flexibility="grow"></lightning-layout-item>
+        <lightning-layout-item>
+            <lightning-button label="Next" icon-name="utility:chevronright" icon-position="right" onclick={nextHandler}>
+            </lightning-button>
+        </lightning-layout-item>
+    </lightning-layout>
+    <lightning-layout>
+        <lightning-combobox name="progress" label="Fruits - (with event dispatch and data)" value={value}
+            placeholder="Select Progress" options={options} onchange={handleFruitChange}></lightning-combobox>
+    </lightning-layout>
+</template>

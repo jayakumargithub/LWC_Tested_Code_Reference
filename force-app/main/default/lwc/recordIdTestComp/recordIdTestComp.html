@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="Related Contacts" icon-name="standard:contact">
+        <lightning-button variant="Brand" label="New" title="Looks like a link" slot="actions" onclick={handleNew}>
+        </lightning-button>
+        <div class="slds-var-m-around_medium">
+            <template if:true={isError}>
+                <div>{errorMessage}</div>
+            </template>
+            <lightning-datatable key-field="Id" data={data} columns={columns} hide-checkbox-column>
+            </lightning-datatable>
+
+        </div>
+    </lightning-card>
+</template>
